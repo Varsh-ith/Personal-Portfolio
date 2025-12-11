@@ -14,18 +14,18 @@
     <div class="orb orb-3"></div>
   </div>
 
-  <div class="cursor" id="cursor"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
 
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="nav">
       <div class="brand">
-        <div class="logo">VS</div>
+        <div class="logo" aria-hidden="true">VS</div>
         <div class="brand-text">
           <div class="name">Varshith Salva</div>
-          <div class="role">AI & ML Engineer · Data Analyst</div>
+          <div class="role">AI &amp; ML Engineer · Data Analyst</div>
         </div>
       </div>
-      <nav class="navlinks">
+      <nav class="navlinks" role="navigation" aria-label="Primary">
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
@@ -34,18 +34,18 @@
     </div>
   </header>
 
-  <main class="wrapper">
-    <section class="hero reveal">
+  <main class="wrapper" role="main">
+    <section class="hero reveal" aria-labelledby="hero-heading">
       <div class="hero-left card">
-        <h1>Hello, I’m <span class="animated">Varshith</span> — I build ML systems & generative models.</h1>
-        <p class="lead">Aspiring AI & ML Engineer experienced in data analysis, model building, and diffusion models. I focus on building reliable pipelines, experimenting with generative models, and shipping reproducible code.</p>
-        <div class="buttons">
+        <h1 id="hero-heading">Hello, I’m <span class="animated">Varshith</span> — I build ML systems &amp; generative models.</h1>
+        <p class="lead">Aspiring AI &amp; ML Engineer experienced in data analysis, model building, and diffusion models. I focus on building reliable pipelines, experimenting with generative models, and shipping reproducible code.</p>
+        <div class="buttons" role="group" aria-label="Quick links">
           <a class="pill" href="mailto:varshithsalva999@gmail.com">Email</a>
-          <a class="pill" href="https://linkedin.com/in/varsh25" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="pill" href="https://github.com/Varsh-ith" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="pill" href="https://www.linkedin.com/in/varsh25" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+          <a class="pill" href="https://github.com/Varsh-ith" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
 
-        <div class="top-skills">
+        <div class="top-skills" aria-hidden="false">
           <strong>Top skills</strong>
           <div class="skills">
             <span class="skill">Python</span>
@@ -58,52 +58,52 @@
         </div>
       </div>
 
-      <aside class="hero-right card">
+      <aside class="hero-right card" aria-labelledby="contact-card-title">
         <div class="contact-card">
-          <div class="contact-title">Contact</div>
+          <div id="contact-card-title" class="contact-title">Contact</div>
           <div class="contact-item">📞 +91 9391135369</div>
-          <div class="contact-item">✉️ varshithsalva999@gmail.com</div>
+          <div class="contact-item">✉️ <a href="mailto:varshithsalva999@gmail.com" style="color:inherit;text-decoration:underline;">varshithsalva999@gmail.com</a></div>
           <div class="contact-item">📍 Hyderabad, Telangana</div>
-          <a class="pill" href="#contact">Get in touch</a>
+          <a class="pill" href="https://www.linkedin.com/in/varsh25" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
         </div>
       </aside>
     </section>
 
-    <section id="projects" class="projects-section reveal">
-      <h2 class="section-title">Projects</h2>
+    <section id="projects" class="projects-section reveal" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-title">Projects</h2>
       <div class="projects-grid">
         <article class="project card tilt" data-tilt>
           <h3>Latent Diffusion Model</h3>
           <p>Implemented latent diffusion architecture for text-to-image generation with focus on latent sampling, conditioning, and stability improvements.</p>
           <div class="tags"><span>PyTorch</span><span>Diffusion</span><span>Generative</span></div>
-          <a class="link" href="https://github.com/Varsh-ith/Latent-Diffusion-Model-for-text-to-image-generation" target="_blank" rel="noreferrer">View code</a>
+          <a class="link" href="https://github.com/Varsh-ith/Latent-Diffusion-Model-for-text-to-image-generation" target="_blank" rel="noopener noreferrer">View code</a>
         </article>
 
         <article class="project card tilt" data-tilt>
           <h3>AI-Driven Traffic Management</h3>
           <p>Built ML models using IoT sensor data for congestion prediction, violation detection, and route optimization.</p>
           <div class="tags"><span>IoT</span><span>ML</span><span>Analytics</span></div>
-          <a class="link" href="https://github.com/Varsh-ith/VaRsH" target="_blank" rel="noreferrer">View code</a>
+          <a class="link" href="https://github.com/Varsh-ith/VaRsH" target="_blank" rel="noopener noreferrer">View code</a>
         </article>
 
         <article class="project card tilt" data-tilt>
           <h3>Personal Portfolio Website</h3>
           <p>Responsive site showcasing projects and demos, built with modern HTML/CSS and Python backend for interactive examples.</p>
           <div class="tags"><span>HTML</span><span>CSS</span><span>Python</span></div>
-          <a class="link" href="#" target="_blank" rel="noreferrer">View demo</a>
+          <a class="link" href="#" target="_blank" rel="noopener noreferrer">View demo</a>
         </article>
 
         <article class="project card tilt" data-tilt>
-          <h3>ML & NLP Labs</h3>
+          <h3>ML &amp; NLP Labs</h3>
           <p>Implemented NLP pipelines with NLTK and built ANN/regression models with feature engineering and evaluation.</p>
           <div class="tags"><span>NLP</span><span>ANN</span></div>
-          <a class="link" href="#" target="_blank" rel="noreferrer">View notes</a>
+          <a class="link" href="#" target="_blank" rel="noopener noreferrer">View notes</a>
         </article>
       </div>
     </section>
 
-    <section id="experience" class="experience reveal">
-      <h2 class="section-title">Experience</h2>
+    <section id="experience" class="experience reveal" aria-labelledby="experience-title">
+      <h2 id="experience-title" class="section-title">Experience</h2>
       <div class="card">
         <p class="muted"><strong>Data Analyst — Bolt It by EVJAZZ</strong><br/>Oct 2025 – Present · Hyderabad</p>
         <ul class="muted">
@@ -114,17 +114,17 @@
       </div>
     </section>
 
-    <section id="skills" class="skills reveal">
-      <h2 class="section-title">Technical Skills</h2>
+    <section id="skills" class="skills reveal" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title">Technical Skills</h2>
       <div class="card">
-        <div class="skills-grid">
-          <div>Python</div><div>Java</div><div>C</div><div>TensorFlow</div><div>PyTorch</div><div>Keras</div><div>Scikit-learn</div><div>NLTK</div><div>OpenCV</div><div>Pandas</div><div>NumPy</div><div>SQL</div>
+        <div class="skills-grid" role="list">
+          <div role="listitem">Python</div><div role="listitem">Java</div><div role="listitem">C</div><div role="listitem">TensorFlow</div><div role="listitem">PyTorch</div><div role="listitem">Keras</div><div role="listitem">Scikit-learn</div><div role="listitem">NLTK</div><div role="listitem">OpenCV</div><div role="listitem">Pandas</div><div role="listitem">NumPy</div><div role="listitem">SQL</div>
         </div>
       </div>
     </section>
 
-    <section id="certs" class="certs reveal">
-      <h2 class="section-title">Certifications</h2>
+    <section id="certs" class="certs reveal" aria-labelledby="certs-title">
+      <h2 id="certs-title" class="section-title">Certifications</h2>
       <div class="card">
         <ul class="muted">
           <li>HackerRank — Basic Python</li>
@@ -135,16 +135,18 @@
       </div>
     </section>
 
-    <section id="contact" class="contact reveal">
-      <h2 class="section-title">Contact</h2>
+    <section id="contact" class="contact reveal" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Contact</h2>
       <div class="card contact-form">
         <p class="muted">I'm open to internships and entry-level roles in AI/ML and data analytics. Reach out via email or LinkedIn — I typically respond quickly.</p>
-        <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+
+        <!-- NOTE: replace 'xknelyjr' with your real Formspree ID when you create a form on Formspree -->
+        <form id="contactForm" action="https://formspree.io/f/xknelyjr" method="POST">
           <div class="form-row">
-            <input name="name" placeholder="Your name" required />
-            <input name="_replyto" type="email" placeholder="Your email" required />
+            <input name="name" placeholder="Your name" required aria-label="Your name" />
+            <input name="_replyto" type="email" placeholder="Your email" required aria-label="Your email" />
           </div>
-          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          <textarea name="message" rows="5" placeholder="Message" required aria-label="Message"></textarea>
           <div class="form-row">
             <button class="cta" type="submit">Send</button>
             <button class="pill" type="reset">Reset</button>
